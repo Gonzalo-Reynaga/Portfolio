@@ -1,0 +1,53 @@
+/*
+TODO ESTO ES CODIGO VIEJO
+
+* { 
+    box-sizing: border-box; 
+}
+
+* { 
+    padding: 0;
+    margin: 0; 
+}
+
+body {
+
+}
+
+header {
+    position:fixed;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    background-color:burlywood;
+    z-index: 1;
+}
+
+header p {
+    position: relative;
+    padding: 15px;
+}
+
+.presentacion {
+    position:relative;
+    padding: 0;
+    margin: 0;
+    top: 50px;
+}
+
+.foto-de-perfil {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+}
+
+.proyectos img{
+    height: 250px;
+    width: 250px;
+}
+
+.presentacion p {
+    display: inline-block;
+}
+
+*/

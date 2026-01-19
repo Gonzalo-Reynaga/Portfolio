@@ -1,0 +1,69 @@
+G<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Gonzalo</title>
+    <link href='css/style.css' rel='stylesheet'>
+</head>
+
+<body>
+    <header>
+        <!-- <a href="/html/">Sobre mí</a> |
+        <a href="/css/">CSS</a> |
+        <a href="/js/">JavaScript</a> |
+        <a href="/python/">Python</a> -->
+        <label class="switch">  <!-- Toggle switch para light/dark mode-->
+            <input type="checkbox">
+            <span class="slider round"></span>
+        </label>
+        <span>Light/dark mode</span>
+        <span>Mi portfolio</span>
+        <nav>
+        <a href="/html/">Sobre mí</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#contacto">Sobre mí</a>
+        </nav>
+    </header>
+    <main class="main-container">
+    <section id="presentacion">
+        <h1>Gonzalo Reynaga</h1>
+        <h2>Fullstack Developer</h2>
+        <img class="foto-de-perfil" src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png" alt="retrato">
+        <span>Estudiante de programación autodidacta, con dos años de Ing. en Sistemas y varios cursos de programación basados en el lenguaje C# junto con .NET framework.</span>
+        <br>
+        <br>
+        <div class="stack-container">
+            <img class="tecnologia" src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="html logo">
+            <img class="tecnologia" src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="css logo">
+            <img class="tecnologia" src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="js logo">
+            <img class="tecnologia" src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="c# logo">
+            <img class="tecnologia" src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt=".net logo">
+        </div>
+    </section>
+    <section id="proyectos">
+        <img class="img-proyecto" src="https://es.unesco.org/youth/toptips/user/pages/images/home-feature-two_mobile.png" alt="proyecto1">
+        <p>Este es mi primer proyecto</p>
+        <img class="img-proyecto" src="https://es.unesco.org/youth/toptips/user/pages/images/home-feature-two_mobile.png" alt="proyecto2">
+        <p>Este es mi segundo proyecto</p>
+        <img class="img-proyecto" src="https://es.unesco.org/youth/toptips/user/pages/images/home-feature-two_mobile.png" alt="proyecto3">
+        <p>Este es mi tercer proyecto</p>
+    </section>
+    <section id="contacto">
+        <form action="example.html" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input id="nombre" type="text" name="nombre" required>
+            <label for="email">E-mail:</label>
+            <input type="text" name="email" id="email" required>
+            <label for="mensaje">Mensaje:</label>
+            <textarea name="mensaje" id="mensaje"></textarea>
+        </form>
+    </section>
+    </main>
+    <footer>
+        <p>Gonzalo Reynaga</p>
+    </footer>
+</body>
+
+</html>
