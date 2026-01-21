@@ -1,5 +1,5 @@
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 header {
@@ -9,7 +9,7 @@ header {
 }
 
 nav {
-    display:flex;
+    display: flex;
     justify-content: center;
     justify-self: stretch;
     gap: 30px;
@@ -29,45 +29,133 @@ section {
     gap: 50px;
 }
 
-.container-foto-presentacion{
-    display:flex;
+.container-foto-presentacion {
+    display: flex;
     gap: 100px;
+    width: 50%;
+    justify-content: flex-start;
 }
 
 .parrafo-y-redes {
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 25px;
+}
+
+p {
+  margin-top: 0; 
+  margin-bottom: 0; 
 }
 
 .redes-sociales {
     display: flex;
-    gap: 5px;
+    gap: 10px;
+}
+
+.icon-link-redes {
+    padding: 5px;
+}
+
+.stack-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .proyecto {
-    display:flex;
-    gap:50px;
-    border-style: dashed;
+    display: flex;
+    border-style: solid;
     border-radius: 10px;
     border-color: black;
+    width: 50%;
+}
+
+
+.img-proyecto {
+    width: 400px;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    flex: 0 0 400px;
+  
+}
+
+.parrafo-y-link-proyecto {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: space-between;
 }
 
 form {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    width: 30%;
 }
 
 textarea {
-    width: 500px;       /* Ocupa todo el ancho disponible */
-    height: 300px;     /* Altura fija inicial */
+    width: 100%;
+    height: 300px;
     resize: none;
 }
 
-h1,h2 {
+.boton-submit {
+    width: 80px;
+}
+
+h1,
+h2 {
     text-align: center;
 }
+
+footer {
+    text-align: center;
+}
+
+@media (max-width: 1200px) {
+
+    .container-foto-presentacion {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .parrafo-y-redes {
+        align-items: center;
+    }
+
+    .stack-container {
+        width: 300px;
+    }
+
+    .proyecto {
+        flex-direction: column;
+        width: 300px;
+        /*text-align: center;      Centra el texto al estar vertical */
+    }
+
+    .img-proyecto {
+        width: 100%;
+        height: auto;
+        object-fit: none;
+        flex: 0 0 auto;
+    }
+
+
+
+    form {
+        width: 400px;
+    }
+}
+
+@media (max-width: 450px) {
+    form {
+        width: 300px;
+    }
+}
+
 
 /*
 TODO ESTO ES CODIGO VIEJO
