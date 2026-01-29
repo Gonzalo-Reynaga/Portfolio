@@ -224,6 +224,10 @@ footer {
     padding: 30px;
 }
 
+#seccion-contacto p {
+    color: var(--color-texto-secundario)
+}
+
 @media (max-width: 1200px) {
 
     header{
