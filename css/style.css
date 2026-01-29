@@ -1,18 +1,14 @@
 :root {
-
-  /* --color-primario: #d9fff5; 
-  --color-secundario: #b9f5d8; 
-  --color-terciario: #aad2ba;
-  --color-cuarto: #6b8f71;
-  --color-texto-primario: #1d1e18; 
-  --color-texto-secundario: #6b8f71; */
-
   --color-primario: #cfe2ff; 
   --color-secundario: #f8f9fa; 
   --color-terciario: #aad2ba;
   --color-cuarto: #6b8f71;
   --color-texto-primario: #1d1e18; 
   --color-texto-secundario: #0d6efd;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 * {
@@ -30,6 +26,12 @@ header {
     justify-items: center;
     background-color: var(--color-primario);
     padding: 25px;
+    position: fixed;
+    width:100%;
+    background-color: var(--color-primario);
+    align-items:center;
+    color: var(--color-texto-secundario);
+    z-index: 1;
 }
 
 nav {
@@ -37,6 +39,23 @@ nav {
     justify-content: center;
     justify-self: stretch;
     gap: 30px;
+}
+
+a:link, a:visited{
+    text-decoration: none;
+    color: var(--color-texto-secundario);
+}
+
+nav a {
+    text-decoration: none;
+    padding: 4px 16px;
+    border: 1px solid;
+    border-radius: 10px;
+    border-color: var(--color-secundario);
+}
+
+a  h3{
+    margin: 0 auto;
 }
 
 .main-container {
@@ -54,7 +73,8 @@ section {
     padding: 100px 0;
 }
 
-#seccion-presentacion, header {
+#seccion-presentacion {
+    margin-top: 75px;
     background-color: var(--color-primario);
 }
 
@@ -71,6 +91,13 @@ h2 {
     gap: 100px;
     width: 50%;
     justify-content: flex-start;
+}
+
+.foto-de-perfil {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    filter: drop-shadow(5px 5px 10px rgba(0,0,0,0.2));
 }
 
 .parrafo-y-redes {
@@ -99,11 +126,17 @@ p {
     gap: 50px;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 50px 0;
 }
 
 .tecnologia {
     width:auto; 
     height:100px;
+    transition: transform 0.3s ease-in-out; 
+}
+
+.tecnologia:hover {
+    transform: scale(1.2);
 }
 
 #seccion-proyectos {
@@ -114,7 +147,7 @@ p {
 .proyecto {
     display: flex;
     border-style: solid;
-    border-radius: 5px;
+    border-radius: 10px;
     border-color: black;
     width: 50%;
     font-family: 'Space Mono', sans-serif;
@@ -123,11 +156,13 @@ p {
 
 
 .img-proyecto {
-    width: 400px;
+    width: 500px;
     height: auto;
     object-fit: cover;
     object-position: center;
     flex: 0 0 400px;
+    border-radius: 10px;
+      filter: drop-shadow(5px 5px 10px rgba(0,0,0,0.1));
   
 }
 
@@ -137,6 +172,10 @@ p {
     padding: 20px;
     justify-content: space-between;
     gap: 30px;
+}
+
+.parrafo-y-link-proyecto h5{
+    margin: 0;
 }
 
 #seccion-contacto {
@@ -173,6 +212,31 @@ footer {
 
 @media (max-width: 1200px) {
 
+    header{
+        position: static;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        row-gap: 30px;
+    }
+
+    nav{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    a header {
+        border-color:  var(--color-secundario);
+        border: 1px solid;
+        border-radius: 10px;
+    }
+
+    section {
+        padding: 50px;
+    }
+
+    #seccion-presentacion {
+        margin-top: 0px;
+    }
     .container-foto-presentacion {
         flex-direction: column;
         align-items: center;
@@ -211,59 +275,6 @@ footer {
     form {
         width: 300px;
     }
+
+    
 }
-
-
-/*
-TODO ESTO ES CODIGO VIEJO
-
-* { 
-    box-sizing: border-box; 
-}
-
-* { 
-    padding: 0;
-    margin: 0; 
-}
-
-body {
-
-}
-
-header {
-    position:fixed;
-    height: 50px;
-    width: 100%;
-    text-align: center;
-    background-color:burlywood;
-    z-index: 1;
-}
-
-header p {
-    position: relative;
-    padding: 15px;
-}
-
-.presentacion {
-    position:relative;
-    padding: 0;
-    margin: 0;
-    top: 50px;
-}
-
-.foto-de-perfil {
-    height: 300px;
-    width: 300px;
-    border-radius: 50%;
-}
-
-.proyectos img{
-    height: 250px;
-    width: 250px;
-}
-
-.presentacion p {
-    display: inline-block;
-}
-
-*/
