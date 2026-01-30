@@ -297,6 +297,10 @@ footer {
     form {
         width: 400px;
     }
+
+    header span {
+        display: none;
+    }
 }
 
 @media (max-width: 450px) {
