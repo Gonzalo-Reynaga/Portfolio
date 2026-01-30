@@ -44,9 +44,7 @@ nav {
 
 a:link, a:visited{
     text-decoration: none;
-    color: var(--color-texto-secundario);
-
-    
+    color: var(--color-texto-secundario);  
 }
 
 nav a {
@@ -84,6 +82,7 @@ section {
 #seccion-presentacion {
     margin-top: 75px;
     background: linear-gradient(180deg,rgba(207, 226, 255, 1) 0%, rgba(248, 249, 250, 1) 100%);
+    gap: 100px;
 }
 
 h1 { 
@@ -117,6 +116,13 @@ h2 {
     justify-content: center;
     
 }
+
+.parrafo-y-redes a {
+  display: inline-flex;
+  align-items: center; 
+  gap: 10px;       
+}
+
 
 p {
   margin-top: 0; 
